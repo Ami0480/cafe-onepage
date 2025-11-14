@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Menu from "./Menu";
 import Header from "./Header";
+import Footer from "./Footer";
 
 import "./App.css";
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
-      <Menu />
+      <Footer />
     </div>
   );
 }
