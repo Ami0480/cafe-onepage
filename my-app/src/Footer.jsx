@@ -91,6 +91,7 @@ export default function Footer() {
           {error && <p className="text-red-500 font-light mt-2">{error}</p>}
         </div>
       </div>
+      <p className="text-right text-white mt-10 text-sm">stonestreet@2025</p>
     </div>
   );
 }
