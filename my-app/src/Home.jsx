@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="container">
+      <section className="container" id="history">
         <h3 className="text-3xl mt-12">Our History</h3>
         <img
           src={HistoryOutsideImage}
@@ -50,10 +50,12 @@ export default function Home() {
         </p>
       </section>
 
-      <Menu />
+      <section id="menu">
+        <Menu />
+      </section>
 
-      <section>
-        <div>
+      <section id="gallery">
+        <>
           <h3 className="text-3xl mt-12">Gallery</h3>
           <div className="flex gap-3 overflow-x-auto mt-6 pb-4 px-5 scrollbar-hide">
             <img
@@ -118,7 +120,7 @@ export default function Home() {
               className="w-72 h-72 object-cover shrink-0 rounded-3xl"
             ></img>
           </div>
-        </div>
+        </>
       </section>
     </div>
   );

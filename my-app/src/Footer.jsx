@@ -44,12 +44,24 @@ export default function Footer() {
           <ul>
             <li className="mb-2">10 Stone St, Perth WA</li>
             <li className="mb-2">12-345-678</li>
-            <li className="mb-2">cafestone@gmail.com</li>
+            <a href="mailto:cafestone@gmail.com">
+              <li className="mb-2">cafestone@gmail.com</li>
+            </a>
           </ul>
           <div className="flex gap-5 my-5">
-            <img src={Facebook} alt="Facebook" />
-            <img src={Instagram} alt="Instagram" />
-            <img src={X} alt="X" />
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+              <img src={Facebook} alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Instagram} alt="Instagram" />
+            </a>
+            <a href="https://www.x.com" target="_blank" rel="noreferrer">
+              <img src={X} alt="X" />
+            </a>
           </div>
         </div>
 
