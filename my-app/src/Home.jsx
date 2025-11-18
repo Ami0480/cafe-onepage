@@ -39,7 +39,7 @@ export default function Home() {
           alt="Old Cafe Exterior"
           className="rounded-3xl mt-8 mb-8"
         ></img>
-        <p className="font-worksans">
+        <p>
           Established in 1950, our café began as a humble corner spot inspired
           by the warmth and charm of traditional British cafés on Stone Street
           in Perth. At a time when European-style cafés were rare in our

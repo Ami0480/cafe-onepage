@@ -28,3 +28,8 @@ h1,
 h3 {
   @apply font-aboreto;
 }
+
+p,
+li {
+  @apply font-worksans;
+}
