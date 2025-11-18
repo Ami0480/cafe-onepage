@@ -40,7 +40,7 @@ export default function Home() {
           className="rounded-3xl mt-8 mb-8"
         ></img>
         <p>
-          Established in 1950, our café began as a humble corner spot inspired
+          Established in 1950, our cafe began as a humble corner spot inspired
           by the warmth and charm of traditional British cafés on Stone Street
           in Perth. At a time when European-style cafés were rare in our
           community, we introduced something new — a cozy place to enjoy freshly
