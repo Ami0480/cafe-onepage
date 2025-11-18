@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "./images/logo.svg";
 import Facebook from "./images/facebook.svg";
@@ -7,10 +6,12 @@ import X from "./images/x.svg";
 import SubmitArrow from "./images/arrow.svg";
 
 export default function Footer() {
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
   return (
     <div className="container bg-black">
       <Link to="/">
-        <img src={Logo} alt="Logo"></img>
+        <img src={Logo} alt="Logo" onClick={scrollToTop}></img>
       </Link>
       <div className="text-white flex flex-col text-left my-5">
         <div>
