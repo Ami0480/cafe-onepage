@@ -26,28 +26,38 @@ export default function Home() {
           alt="Cafe Hero"
           className="absolute inset-0 w-full h-full object-cover z-0"
         ></img>
-        <div className="container absolute inset-0 flex flex-col justify-center items-center text-center z-20">
-          <h1 className="text-white text-5xl mb-2">Stone Street</h1>
-          <h2 className="text-white font-sacramento text-5xl">cafe</h2>
+        <div className="section-container absolute inset-0 flex flex-col justify-center items-center z-20">
+          <h1 className="text-white text-5xl mb-2 md:text-7xl">Stone Street</h1>
+          <h2 className="text-white font-sacramento text-5xl md:text-7xl">
+            cafe
+          </h2>
         </div>
       </div>
 
-      <section className="container" id="history">
-        <h3 className="text-3xl mt-12">Our History</h3>
-        <img
-          src={HistoryOutsideImage}
-          alt="Old Cafe Exterior"
-          className="rounded-3xl mt-8 mb-8"
-        ></img>
-        <p>
-          Established in 1950, our cafe began as a humble corner spot inspired
-          by the warmth and charm of traditional British cafés on Stone Street
-          in Perth. At a time when European-style cafés were rare in our
-          community, we introduced something new — a cozy place to enjoy freshly
-          brewed coffee, homemade pastries, and friendly conversation. Over the
-          years, our café has grown, but our passion for authentic flavors and
-          welcoming atmosphere remains unchanged.
-        </p>
+      <section className="section-container" id="history">
+        <h3 className="text-3xl mt-12 md:hidden">Our History</h3>
+        <div className="md:flex md:flex-row-reverse md:gap-24 md:my-40">
+          <div className="md:flex-1 md:w-1/2">
+            <img
+              src={HistoryOutsideImage}
+              alt="Old Cafe Exterior"
+              className="rounded-3xl my-8 w-full md:my-0 md:rounded-none md:object-cover md:h-96"
+            ></img>
+          </div>
+
+          <div className="md:text-left md:flex-1">
+            <h3 className="hidden md:block md:text-5xl md:mb-8">Our History</h3>
+            <p>
+              Established in 1950, our cafe began as a humble corner spot
+              inspired by the warmth and charm of traditional British cafés on
+              Stone Street in Perth. At a time when European-style cafés were
+              rare in our community, we introduced something new — a cozy place
+              to enjoy freshly brewed coffee, homemade pastries, and friendly
+              conversation. Over the years, our café has grown, but our passion
+              for authentic flavors and welcoming atmosphere remains unchanged.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="menu">
@@ -56,8 +66,10 @@ export default function Home() {
 
       <section id="gallery">
         <>
-          <h3 className="text-3xl mt-12">Gallery</h3>
-          <div className="flex gap-3 overflow-x-auto mt-6 pb-4 px-5 scrollbar-hide">
+          <h3 className="text-3xl mt-12 md:text-5xl md:mt-40 md:mb-20">
+            Gallery
+          </h3>
+          <div className="flex gap-3 overflow-x-auto mt-6 pb-4 px-5 scrollbar-hide md:mb-20 md:pl-24">
             <img
               src={BrickInterior}
               alt="Brick Interior"

@@ -20,8 +20,8 @@
 body {
   @apply text-center;
 }
-.container {
-  @apply p-5;
+.section-container {
+  @apply px-5 mx-auto md:px-24;
 }
 
 h1,

@@ -21,13 +21,19 @@ export default function Header() {
 
   return (
     <>
-      <div className="absolute z-50 flex items-center justify-between w-full p-4">
-        <Link to="/" onClick={scrollToTop}>
-          <img src={Logo} alt="Logo" />
+      <div className="section-container absolute z-50 flex items-center justify-between w-full p-4">
+        <Link to="/" onClick={scrollToTop} className="md:pt-10">
+          <img src={Logo} alt="Logo" className="md:w-8 md:h-8" />
         </Link>
         <button onClick={toggleNav} className="cursor-pointer z-50 relative">
-          <img src={Hamburger} alt="Nav Icon" className="w-8 h-8" />
+          <img src={Hamburger} alt="Nav Icon" className="w-8 h-8 md:hidden" />
         </button>
+        <div className="hidden md:flex md:text-white md:text-2xl md:font-aboreto md:gap-8 md:pt-10">
+          <a href="#history">History</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
       {navOpen && <div className="fixed inset-0" onClick={closeNav} />}
       <div

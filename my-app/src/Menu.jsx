@@ -16,6 +16,7 @@ export default function Menu() {
     { name: "Iced Latte", price: "8.0" },
     { name: "Iced Mocha", price: "8.0" },
     { name: "Iced Long Black", price: "7.0" },
+    { name: "Kids Juice (Apple, Orange)", price: "4.5" },
   ];
   const foodMenu = [
     { name: "Avocado Toast", price: "12.0" },
@@ -37,35 +38,43 @@ export default function Menu() {
 
   return (
     <div>
-      <section className="container" id="full-menu">
-        <h3 className="text-3xl mt-12">Our Menu</h3>
-        <h4 className="text-left ml-5 mt-7 font-bold">Coffee & Drinks</h4>
-        {displayedDrink.map((service, index) => (
-          <div
-            className="flex ml-5 mr-5 mt-3 mb-3 place-content-between border-b border-gray-300 "
-            key={index}
-          >
-            <span>{service.name}</span>
-            <span>{service.price}</span>
+      <section className="section-container" id="full-menu">
+        <h3 className="text-3xl mt-12 md:text-5xl md:my-20">Our Menu</h3>
+        <div className="md:flex md:gap-24 md:mb-16">
+          <div className="md:w-1/2">
+            <h4 className="text-left ml-5 mt-7 font-bold md:mt-0">
+              Coffee & Drinks
+            </h4>
+            {displayedDrink.map((service, index) => (
+              <div
+                className="flex mx-5 my-3 place-content-between border-b border-gray-300 md:mx-0"
+                key={index}
+              >
+                <span>{service.name}</span>
+                <span>{service.price}</span>
+              </div>
+            ))}
           </div>
-        ))}
-        <h4 className="text-left ml-5 mt-7 font-bold">Food</h4>
-        {displayedFood.map((service, index) => (
-          <div
-            className="flex ml-5 mr-5 mt-3 mb-3 place-content-between border-b border-gray-300 "
-            key={index}
-          >
-            <span>{service.name}</span>
-            <span>{service.price}</span>
+          <div className="md:w-1/2">
+            <h4 className="text-left ml-5 mt-7 font-bold md:mt-0">Food</h4>
+            {displayedFood.map((service, index) => (
+              <div
+                className="flex mx-5 my-3 place-content-between border-b border-gray-300 md:mx-0"
+                key={index}
+              >
+                <span>{service.name}</span>
+                <span>{service.price}</span>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
 
         <Link
           to="full-menu"
           smooth={true}
           duration={500}
           onClick={() => setShowAll(!showAll)}
-          className="flex justify-center items-center text-center my-7 py-2 rounded-full w-32 mx-auto cursor-pointer text-white bg-black hover:text-blue-800"
+          className="flex justify-center items-center text-center my-7 py-2 rounded-full w-32 mx-auto cursor-pointer text-white bg-black hover:bg-amber-950 ease-in-out"
         >
           {showAll ? "Close Menu" : "See Menu"}
         </Link>
